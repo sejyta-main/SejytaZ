@@ -37,5 +37,5 @@ canvas.addEventListener('pointermove',e=>{if(!down)return;const dx=e.clientX-dow
 canvas.addEventListener('pointerup',e=>{if(!down)return;if(!down.moved&&state){const rect=canvas.getBoundingClientRect(),p=[e.clientX-rect.left,e.clientY-rect.top];let best=-1,dist=Infinity;for(let i=0;i<6;i++){const x=((i%3)-1)*2.45,z=(Math.floor(i/3)-.5)*2.25-.5;const a=project(x,.24,z),d=Math.hypot((p[0]-a[0])*1.15,(p[1]-a[1])*1.55);if(d<dist){dist=d;best=i}}if(dist<Math.max(45,canvas.clientWidth*.115))handler(best)}down=null});
 canvas.addEventListener('pointercancel',()=>down=null);
 canvas.addEventListener('wheel',e=>{e.preventDefault();zoom=Math.max(10,Math.min(20,zoom+Math.sign(e.deltaY)*.7))},{passive:false});
-window.farm3d={refresh(s){state=s},setPlotHandler(fn){handler=fn}};requestAnimationFrame(draw);
+window.farmScene={refresh(s){state=s},setPlotHandler(fn){handler=fn}};requestAnimationFrame(draw);
 })();
