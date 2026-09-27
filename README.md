@@ -13,3 +13,7 @@ If WebGL is unavailable, a station travel view preserves the full collect/proces
 ## Interaction update
 
 Flowers visibly leave the beds, processed bouquets travel through the workshop, and sale coins move from the market. Carried inventory stacks on the character. Loose petals bounce under gravity and flowers regrow. The character accelerates smoothly and collides with garden beds, worktables, market counter and upgrade board. This is a lightweight custom game simulation, not a general-purpose rigid-body physics engine.
+
+## Greenhouse story update
+
+Nine story chapters follow Mira and Eli from reopening the stall to preparing for the spring festival. Fulfill town orders for reputation and bonuses, unlock the berry orchard, gather berries, cook jam, and sell both bouquets and jars. The world now includes the orchard gate, kitchen, customers, winding paths and moving products. An oven upgrade accelerates cooking. Existing local saves carry forward.
