@@ -1,17 +1,11 @@
-# Sunny Acres
+# Bloom & Boom
 
-An original, responsive idle farming browser game inspired by the harvest, sell, upgrade, and expand loop. No copied assets or game code.
+An original mobile-first 3D flower workshop. Walk freely with the touch joystick or WASD/arrow keys. Gather flowers in the garden, turn two flowers into one bouquet at the workshop, sell bouquets at the market, and upgrade your business. Stations work automatically while nearby; the action button gives an immediate extra action. Drag on the world to adjust the camera.
 
-## Play locally
+Inspired by the satisfying gather → process → sell → upgrade loop of casual mobile tycoon games. All geometry and game code are original; no assets were copied.
 
-Open `index.html` in a browser, or serve this directory using `python3 -m http.server 8000` and visit `http://localhost:8000`.
+## Run
 
-Tap plots to plant and harvest. Sell crops, deliver orders, purchase land and upgrades, unlock crops with XP, and hire helpers. Progress saves automatically in browser localStorage. Growth continues while the tab is closed, but helpers work only while the game is open. Money is **in-game currency**, not withdrawable cash.
+Serve the repository root over HTTP (`python3 -m http.server 8000`) or open the GitHub Pages deployment. JavaScript modules and service workers require a secure hosted origin for installation. Chrome on Android can install the PWA from its menu **Add to Home screen → Install**. It works offline after first successful load. Save data lives on the device in localStorage; there is no account sync or real-money earning.
 
-## Publishing
-
-GitHub Pages can serve this static repository from its root directory. Select `main` / root under repository Settings → Pages.
-
-## 3D and mobile installation
-
-The farm is rendered with native WebGL, including draggable camera rotation and tap controls. It has no 3D library dependency. On Android Chrome, open the published HTTPS site and choose **Install app** or **Add to Home screen** from the browser menu. Chrome may also show the in-game Install button. On iPhone Safari, choose **Share → Add to Home Screen**. Installed versions work offline after the first successful load. Progress is saved per browser/device and does not sync across devices.
+If WebGL is unavailable, a station travel view preserves the full collect/process/sell loop. The full-screen game uses WebGL without external 3D dependencies.
