@@ -17,3 +17,7 @@ Flowers visibly leave the beds, processed bouquets travel through the workshop, 
 ## Greenhouse story update
 
 Nine story chapters follow Mira and Eli from reopening the stall to preparing for the spring festival. Fulfill town orders for reputation and bonuses, unlock the berry orchard, gather berries, cook jam, and sell both bouquets and jars. The world now includes the orchard gate, kitchen, customers, winding paths and moving products. An oven upgrade accelerates cooking. Existing local saves carry forward.
+
+## Customer and crew update
+
+Customers line up at the market with a specific bouquet or jam request. Their patience runs out in game time and unmet orders cost reputation. Serving promptly pays a tip. Tap the money display for the income ledger and current earnings rate. Hire a flower picker, florist, berry picker, chef and cashier separately; staff work while you move through the world. Customers, staff, register cash, terrain, and the shop frontage are visible in the 3D world. The simulation pauses while a menu is open and does not penalize you for being away from the app.
