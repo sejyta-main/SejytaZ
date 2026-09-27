@@ -11,3 +11,7 @@ Tap plots to plant and harvest. Sell crops, deliver orders, purchase land and up
 ## Publishing
 
 GitHub Pages can serve this static repository from its root directory. Select `main` / root under repository Settings → Pages.
+
+## 3D and mobile installation
+
+The farm is rendered with native WebGL, including draggable camera rotation and tap controls. It has no 3D library dependency. On Android Chrome, open the published HTTPS site and choose **Install app** or **Add to Home screen** from the browser menu. Chrome may also show the in-game Install button. On iPhone Safari, choose **Share → Add to Home Screen**. Installed versions work offline after the first successful load. Progress is saved per browser/device and does not sync across devices.
