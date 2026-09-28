@@ -8,7 +8,7 @@ Inspired by the satisfying gather → process → sell → upgrade loop of casua
 
 Serve the repository root over HTTP (`python3 -m http.server 8000`) or open the GitHub Pages deployment. JavaScript modules and service workers require a secure hosted origin for installation. Chrome on Android can install the PWA from its menu **Add to Home screen → Install**. It works offline after first successful load. Save data lives on the device in localStorage; there is no account sync or real-money earning.
 
-If WebGL is unavailable, a station travel view preserves the full collect/process/sell loop. The full-screen game uses WebGL without external 3D dependencies.
+If WebGL is unavailable or loses its context, the game switches to a mobile-friendly illustrated world with the same movement, customers and production loop. The 🎨 button lets you choose a graphics mode. The WebGL world and the illustrated renderer have no external runtime dependencies.
 
 ## Interaction update
 
@@ -21,3 +21,9 @@ Nine story chapters follow Mira and Eli from reopening the stall to preparing fo
 ## Customer and crew update
 
 Customers line up at the market with a specific bouquet or jam request. Their patience runs out in game time and unmet orders cost reputation. Serving promptly pays a tip. Tap the money display for the income ledger and current earnings rate. Hire a flower picker, florist, berry picker, chef and cashier separately; staff work while you move through the world. Customers, staff, register cash, terrain, and the shop frontage are visible in the 3D world. The simulation pauses while a menu is open and does not penalize you for being away from the app.
+
+## Graphics recovery
+
+The old emoji station grid has been replaced by an illustrated world with a following camera, depth-sorted buildings, crops, staff and customers. On devices with WebGL the original low-poly world remains available. A transient rendering problem no longer permanently disables the game because the illustrated mode takes over. Inventory, progress and earnings stay in the same save.
+
+After the story, repeatable shifts ask you to serve an increasing number of customers before two leave. A successful shift pays a bonus; two missed customers restart that shift. The counter and bonus appear in the mission HUD and earnings panel.
