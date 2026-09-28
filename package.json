@@ -1,0 +1,1 @@
+{"name":"bloom-boom-garden-hotel","private":true,"version":"1.1.0","type":"module","scripts":{"build":"esbuild resort.js --bundle --minify --format=esm --target=es2020 --outfile=resort.bundle.js"},"dependencies":{"three":"0.186.1"},"devDependencies":{"esbuild":"0.25.12"}}
