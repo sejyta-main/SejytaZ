@@ -12,3 +12,25 @@
   .customer-hud{top:calc(264px + env(safe-area-inset-top,0px))}
 }
 @media(max-width:370px){.logo>span{display:none}.logo small{display:none}.hud{padding-left:9px;padding-right:9px}.wallet small{font-size:7px}}
+/* Mobile game HUD: keep the shop visible while goals remain readable. */
+@media(max-width:640px){
+  .hud{padding:7px 10px 5px;gap:4px;background:linear-gradient(#315e53cc,#315e5300)}
+  .logo{margin-right:auto;min-width:0}.logo b{font-size:12px;white-space:nowrap}.logo small{display:none}
+  .logo>span{width:28px;height:28px;border-radius:10px;font-size:18px}
+  .wallet{font-size:13px;gap:3px;padding:5px 7px!important}.wallet small{display:none}
+  .icon-button{width:31px;height:31px;font-size:15px;border-radius:10px}
+  .mission{top:calc(56px + env(safe-area-inset-top,0px));min-height:78px;padding:8px 10px;border-radius:16px}
+  .mission-icon{font-size:24px;padding:4px}.mission small{font-size:8px}.mission strong{font-size:12px;line-height:1.13}
+  .chapter-name{font-size:8px}.mission-track{margin-top:4px}
+  .counter{top:calc(145px + env(safe-area-inset-top,0px));gap:3px}
+  .counter>div{min-width:51px;padding:3px 3px;border-radius:11px}.counter span{font-size:15px}.counter b{font-size:12px}.counter small{font-size:7px}
+  .customer-hud{top:calc(204px + env(safe-area-inset-top,0px));padding:5px 9px;border-radius:14px;width:min(310px,calc(100% - 28px))}
+  .customer-hud>span{font-size:24px}.customer-hud b{font-size:11px}.customer-hud small{font-size:9px}
+  .controls{bottom:calc(67px + env(safe-area-inset-bottom,0px));padding:0 20px}
+  .stick{width:95px;height:95px}.stick>div{width:43px;height:43px}
+  .action{width:84px;height:84px;font-size:14px}.control-tip{left:122px;bottom:21px}
+  .bottom{bottom:calc(8px + env(safe-area-inset-bottom,0px));padding:0 12px;gap:5px}
+  .bottom button{padding:8px 2px;font-size:9px}
+  .zone-message{bottom:calc(176px + env(safe-area-inset-bottom,0px));max-width:calc(100% - 20px);white-space:normal;text-align:center}
+}
+@media(max-width:375px){.logo>span{display:none}.wallet{font-size:12px}.bottom button{font-size:8px}.hud{padding-left:8px;padding-right:8px}}

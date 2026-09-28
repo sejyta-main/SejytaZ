@@ -26,4 +26,6 @@ Customers line up at the market with a specific bouquet or jam request. Their pa
 
 The old emoji station grid has been replaced by an illustrated world with a following camera, depth-sorted buildings, crops, staff and customers. On devices with WebGL the original low-poly world remains available. A transient rendering problem no longer permanently disables the game because the illustrated mode takes over. Inventory, progress and earnings stay in the same save.
 
+The illustrated renderer now uses original transparent WebP artwork for its stations, character, trees and textured ground. Assets are cached by the service worker for offline play. The compact mobile HUD leaves more room for the scene. Help displays the active graphics mode and any fallback reason. This artwork improves the 2D fallback; the WebGL world remains a separate low-poly implementation.
+
 After the story, repeatable shifts ask you to serve an increasing number of customers before two leave. A successful shift pays a bonus; two missed customers restart that shift. The counter and bonus appear in the mission HUD and earnings panel.

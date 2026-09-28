@@ -1,4 +1,4 @@
-const CACHE='bloom-boom-v13';const ASSETS=['./','./index.html','./style.css?v=13','./game.js?v=13','./scene3d.js?v=13','./scene2d.js?v=13','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png'];
+const CACHE='bloom-boom-v14';const ASSETS=['./','./index.html','./style.css?v=14','./game.js?v=14','./scene3d.js?v=14','./scene2d.js?v=14','./manifest.webmanifest','./icons/icon-192.png','./icons/icon-512.png',...['garden','grass','hero','kitchen','market','orchard','tree','upgrades','workshop'].map(name=>'./assets/'+name+'.webp')];
 self.addEventListener('install',e=>e.waitUntil(caches.open(CACHE).then(c=>c.addAll(ASSETS)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',e=>e.waitUntil(caches.keys().then(keys=>Promise.all(keys.filter(k=>k!==CACHE).map(k=>caches.delete(k)))).then(()=>self.clients.claim())));
 self.addEventListener('fetch',e=>{if(e.request.method!=='GET'||new URL(e.request.url).origin!==self.location.origin)return;e.respondWith(fetch(e.request).then(r=>{if(r.ok){const copy=r.clone();caches.open(CACHE).then(c=>c.put(e.request,copy))}return r}).catch(()=>caches.match(e.request)))});
